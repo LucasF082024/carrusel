@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const items = document.querySelectorAll('.carousel .item');
+
+
     function* myGen(){
         while(true){
         yield "Hay imagen 1";
