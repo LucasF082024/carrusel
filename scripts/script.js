@@ -14,10 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const gen = myGen();
 
-    function reset(){
-        let objetoGen = gen.next()
-    }
-
     function nextImage(){
         objetoGen = gen.next()
         if (!objetoGen.done) {
@@ -27,9 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
     }
+
+
     
-    const carrusel = document.querySelector('.right.carousel-control')
-    carrusel.addEventListener('click', nextImage) 
+    const carruselR = document.querySelector('.right.carousel-control')
+    carruselR.addEventListener('click', nextImage) 
     
     
 
